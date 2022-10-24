@@ -1,0 +1,40 @@
+{
+    "name": "epja-course",
+    "version": "1.0.0",
+    "description": "This project is Enterprise Programming on Javascript - Advanced course project.",
+    "main": "./src/index.tsx",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "ijl-cli --server --port=8099 --with-open-browser",
+        "build": "npm run clean && ijl-cli --build --dev",
+        "build:prod": "npm run clean && ijl-cli --build",
+        "clean": "rimraf dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tasneem22/EPJA-Course.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tasneem22/EPJA-Course/issues"
+    },
+    "homepage": "https://github.com/tasneem22/EPJA-Course#readme",
+    "devDependencies": {
+        "@ijl/cli": "^4.1.5",
+        "@splidejs/react-splide": "^0.7.12",
+        "@types/react": "^18.0.21",
+        "@types/react-dom": "^18.0.6"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "framer-motion": "^7.5.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.6.0",
+        "react-router-dom": "^6.4.2",
+        "styled-components": "^5.3.6",
+        "typescript": "^4.8.4"
+    }
+}
