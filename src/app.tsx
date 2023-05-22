@@ -2,7 +2,6 @@ import React from 'react';
 import Pages from './pages/Pages';
 import Category from './components/Category';
 import Search from './components/Search';
-import NavBar from './components/Navbar';
 import { getNavigationsValue } from '@ijl/cli';
 
 // import { BrowserRouter, Link } from 'react-router-dom';
