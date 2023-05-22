@@ -4,7 +4,19 @@ import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 import React from 'react';
+type Recipe = {
+    title: string;
+    image: string;
+    summary: string;
+    instructions: string;
+    id: number;
+    extendedIngredients:Array<Ingredients>;
+  };
+type Ingredients = {
+    original: string;
+    id: number;
 
+};
 function Recipe() {
     const [recipe, setRecipe] = useState({});
     const [activeTab, setActiveTab] = useState('instructions');

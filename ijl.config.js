@@ -8,11 +8,19 @@ module.exports = {
         }
     },
     navigations: {
-        'epja-course.main': '/epja-course'
+        'meal-assist/main': '/meal-assist',
+        'meal-assist': '/meal-assist',
+        '/': '/meal-assist',
+        'meal-assist/root': 'meal-assist',
+        'cuisine/Italian': '/cuisine/Italian/',
+        'cuisine/Thai': '/cuisine/Thai',
+        'cuisine/American': '/cuisine/American'
+
     },
     features: {
-        'epja-course': {
+        'meal-assist': {
             // add your features here in the format [featureName]: { value: string }
+            
         },
     },
     config: {

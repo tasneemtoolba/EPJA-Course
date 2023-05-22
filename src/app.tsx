@@ -2,7 +2,12 @@ import React from 'react';
 import Pages from './pages/Pages';
 import Category from './components/Category';
 import Search from './components/Search';
-import { BrowserRouter, Link } from 'react-router-dom';
+import NavBar from './components/Navbar';
+import { getNavigationsValue } from '@ijl/cli';
+
+// import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 import styled from 'styled-components';
 import { GiKnifeFork } from 'react-icons/gi';
 
@@ -12,12 +17,13 @@ const App = () => {
             <BrowserRouter>
                 <Nav>
                     <GiKnifeFork />
-                    <Logo to={'/'}>Delicious</Logo>
-                </Nav>
+                    <Logo to={'/'}>Delicious</Logo>        
+                </Nav>        
                 <Search />
                 <Category />
-                <Pages />
+                <Pages />         
             </BrowserRouter>
+
         </div>
     );
 }
