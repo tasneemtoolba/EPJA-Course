@@ -7,19 +7,19 @@ import styled from 'styled-components';
 function Category() {
     return (
         <List>
-            <SLink to={'/cuisine/Italian'}>
+            <SLink to={'/meal-assist/cuisine/Italian'}>
                 <FaPizzaSlice />
                 <h4>Italian</h4>
             </SLink>
-            <SLink to={'/cuisine/American'}>
+            <SLink to={'/meal-assist/cuisine/American'}>
                 <FaHamburger />
                 <h4>American</h4>
             </SLink>
-            <SLink to={'/cuisine/Thai'}>
+            <SLink to={'/meal-assist/cuisine/Thai'}>
                 <GiNoodles />
                 <h4>Thai</h4>
             </SLink>
-            <SLink to={'/cuisine/Korean'}>
+            <SLink to={'/meal-assist/cuisine/Korean'}>
                 <GiChopsticks />
                 <h4>Korean</h4>
             </SLink>

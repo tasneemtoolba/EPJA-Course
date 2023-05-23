@@ -5,6 +5,7 @@ import Recipe from './Recipe';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import React from 'react';
+import { getNavigationsValue, getNavigations } from '@ijl/cli';
 
 function Pages() {
     const location = useLocation();
@@ -12,10 +13,10 @@ function Pages() {
     return (
         <AnimatePresence mode='wait'>
             <Routes location={location} key={location.pathname}>
-                <Route path='/meal-assist' element={<Home />} />
-                <Route path='/cuisine/:type' element={<Cuisine />} />
-                <Route path='/searched/:search' element={<Searched />} />
-                <Route path='/recipe/:id' element={<Recipe />} />
+                <Route path={getNavigationsValue('cuisine.root')} element={<Home />} />
+                <Route path={getNavigationsValue('cuisine.cuisine')} element={<Cuisine />} />
+                <Route path={getNavigationsValue('cuisine.search')} element={<Searched />} />
+                <Route path={getNavigationsValue('cuisine.recipe')} element={<Recipe />} />
             </Routes>
         </AnimatePresence>
     );

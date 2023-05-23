@@ -8,14 +8,10 @@ module.exports = {
         }
     },
     navigations: {
-        'meal-assist/main': '/meal-assist',
-        'meal-assist': '/meal-assist',
-        '/': '/meal-assist',
-        'meal-assist/root': 'meal-assist',
-        'cuisine/Italian': '/cuisine/Italian/',
-        'cuisine/Thai': '/cuisine/Thai',
-        'cuisine/American': '/cuisine/American'
-
+        'cuisine.root': '/meal-assist',
+        'cuisine.recipe': '/meal-assist/recipe/:id',
+        'cuising.search': '/meal-assist/searched/:search',
+        'cuisine.cuisine': '/meal-assist/cuisine/:type',
     },
     features: {
         'meal-assist': {

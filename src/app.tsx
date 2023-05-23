@@ -14,10 +14,8 @@ const App = () => {
     return (
         <div className='App'>
             <BrowserRouter>
-                <Nav>
-                    <GiKnifeFork />
-                    <Logo to={'/'}>Delicious</Logo>        
-                </Nav>        
+                <GiKnifeFork />
+                <Logo to={'/'}>Delicious</Logo>        
                 <Search />
                 <Category />
                 <Pages />         
