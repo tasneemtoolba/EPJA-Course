@@ -8,10 +8,10 @@ module.exports = {
         }
     },
     navigations: {
-        'cuisine.root': '/meal-assist',
-        'cuisine.recipe': '/meal-assist/recipe/:id',
-        'cuising.search': '/meal-assist/searched/:search',
-        'cuisine.cuisine': '/meal-assist/cuisine/:type',
+        'meal-assist.root': '/meal-assist',
+        'meal-assist.recipe': '/meal-assist/recipe/:id',
+        'meal-assist.search': '/meal-assist/searched/:search',
+        'meal-assist.cuisine': '/meal-assist/cuisine/:type',
     },
     features: {
         'meal-assist': {

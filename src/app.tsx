@@ -15,7 +15,7 @@ const App = () => {
         <div className='App'>
             <BrowserRouter>
                 <GiKnifeFork />
-                <Logo to={'/'}>Delicious</Logo>        
+                <Logo to={getNavigationsValue('meal-assist.root')}>Delicious</Logo>        
                 <Search />
                 <Category />
                 <Pages />         

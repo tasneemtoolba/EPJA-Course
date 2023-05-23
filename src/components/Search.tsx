@@ -10,7 +10,7 @@ function Search() {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        navigate(`/searched/${input}`);
+        navigate(`/meal-assist/searched/${input}`);
     };
 
     return (
